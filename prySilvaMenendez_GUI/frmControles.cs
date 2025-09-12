@@ -16,5 +16,18 @@ namespace prySilvaMenendez_GUI
         {
             InitializeComponent();
         }
+
+        
+
+        private void frmControles_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            frmBotonera ventanaBotonera = new frmBotonera();
+            ventanaBotonera.Show();
+        }
     }
 }

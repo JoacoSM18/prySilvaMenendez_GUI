@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm2.Designer.cs">
-      <DependentUpon>frm2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmControles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmControles.Designer.cs">
       <DependentUpon>frmControles.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBotonera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBotonera.Designer.cs">
+      <DependentUpon>frmBotonera.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm2.resx">
-      <DependentUpon>frm2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmControles.resx">
       <DependentUpon>frmControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBotonera.resx">
+      <DependentUpon>frmBotonera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

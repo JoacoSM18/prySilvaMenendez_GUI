@@ -3,14 +3,14 @@
     partial class frmControles
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,42 +20,43 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBotonera = new System.Windows.Forms.Button();
+            this.btnAbrir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnBotonera
+            // btnAbrir
             // 
-            this.btnBotonera.Location = new System.Drawing.Point(163, 187);
-            this.btnBotonera.Name = "btnBotonera";
-            this.btnBotonera.Size = new System.Drawing.Size(142, 58);
-            this.btnBotonera.TabIndex = 0;
-            this.btnBotonera.Text = "Abrir Botonera";
-            this.btnBotonera.UseVisualStyleBackColor = true;
+            this.btnAbrir.Location = new System.Drawing.Point(142, 141);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(208, 158);
+            this.btnAbrir.TabIndex = 0;
+            this.btnAbrir.Text = "Abrir Botonera";
+            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // frmControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.btnBotonera);
+            this.Controls.Add(this.btnAbrir);
             this.Name = "frmControles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Controles de Interfaz Grafica";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmControles_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnBotonera;
+        private System.Windows.Forms.Button btnAbrir;
     }
 }
-
