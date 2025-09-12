@@ -61,5 +61,10 @@ namespace prySilvaMenendez_GUI
                 btnAtras.Enabled = false;
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
