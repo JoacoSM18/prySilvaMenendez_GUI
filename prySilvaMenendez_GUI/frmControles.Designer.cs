@@ -33,7 +33,7 @@
             // 
             // btnBotonera
             // 
-            this.btnBotonera.Location = new System.Drawing.Point(154, 219);
+            this.btnBotonera.Location = new System.Drawing.Point(163, 187);
             this.btnBotonera.Name = "btnBotonera";
             this.btnBotonera.Size = new System.Drawing.Size(142, 58);
             this.btnBotonera.TabIndex = 0;
