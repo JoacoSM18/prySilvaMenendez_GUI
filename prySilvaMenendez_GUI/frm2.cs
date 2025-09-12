@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prySilvaMenendez_GUI
 {
-    public partial class Form1 : Form
+    public partial class frm2 : Form
     {
-        public Form1()
+        public frm2()
         {
             InitializeComponent();
         }
