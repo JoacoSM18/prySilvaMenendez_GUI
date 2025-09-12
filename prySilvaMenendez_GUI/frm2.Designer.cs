@@ -36,6 +36,7 @@
             this.txtNombre3 = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNombre1
@@ -88,27 +89,39 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(112, 341);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(111, 337);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(69, 32);
+            this.btnCancelar.Size = new System.Drawing.Size(73, 40);
             this.btnCancelar.TabIndex = 6;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "<----";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(331, 341);
+            this.btnAgregar.Location = new System.Drawing.Point(220, 292);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(69, 32);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(332, 341);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "----->";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtNombre3);
@@ -134,5 +147,6 @@
         private System.Windows.Forms.TextBox txtNombre3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button button1;
     }
 }
