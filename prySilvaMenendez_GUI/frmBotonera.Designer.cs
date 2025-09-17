@@ -49,6 +49,7 @@
             // lblDatos
             // 
             this.lblDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDatos.Location = new System.Drawing.Point(160, 71);
             this.lblDatos.Name = "lblDatos";
             this.lblDatos.Size = new System.Drawing.Size(125, 34);

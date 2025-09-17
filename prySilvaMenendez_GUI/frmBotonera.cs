@@ -64,7 +64,6 @@ namespace prySilvaMenendez_GUI
             }
             else
             {
-                // Volviste al "estado inicial"
                 lblDatos.Text = "Nombres:";
                 btnAtras.Enabled = false;
             }
