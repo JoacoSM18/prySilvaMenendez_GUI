@@ -23,48 +23,51 @@ namespace prySilvaMenendez_GUI
         }
 
         string[] vecNombres = new string[3];
-        int indice = 0; 
+        int indice = -1; 
 
         private void frmBotonera_Load(object sender, EventArgs e)
         {
             vecNombres[0] = "Luca";
             vecNombres[1] = "Josefina";
             vecNombres[2] = "Pablo";
-
-
-            lblDatos.Text = vecNombres[0];
-
+            btnAtras.Enabled = false;
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            indice++;
-            if (vecNombres.Length > indice)
+            indice++; 
+
+            if (indice < vecNombres.Length) 
             {
                 lblDatos.Text = vecNombres[indice];
+                btnAtras.Enabled = true; 
             }
-            else
+
+            if (indice == vecNombres.Length - 1)
             {
                 btnSiguiente.Enabled = false;
             }
         }
-
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            if (vecNombres.Length > 0)
-            {
-                indice--;
-                lblDatos.Text = vecNombres[indice];
-            }
-            else
-            {
-                btnAtras.Enabled = false;
-            }
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            indice--;
+
+            if (indice >= 0)
+            {
+                lblDatos.Text = vecNombres[indice];
+                btnSiguiente.Enabled = true;
+            }
+            else
+            {
+                // Volviste al "estado inicial"
+                lblDatos.Text = "Nombres:";
+                btnAtras.Enabled = false;
+            }
         }
     }
 }

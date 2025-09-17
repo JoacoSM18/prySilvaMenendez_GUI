@@ -29,34 +29,56 @@
         private void InitializeComponent()
         {
             this.btnAbrir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(142, 141);
+            this.btnAbrir.BackColor = System.Drawing.Color.Sienna;
+            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAbrir.Location = new System.Drawing.Point(111, 270);
+            this.btnAbrir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(208, 158);
+            this.btnAbrir.Size = new System.Drawing.Size(274, 92);
             this.btnAbrir.TabIndex = 0;
             this.btnAbrir.Text = "Abrir Botonera";
-            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.UseVisualStyleBackColor = false;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(57, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(352, 69);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bienvenido!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmControles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.BackColor = System.Drawing.Color.ForestGreen;
+            this.ClientSize = new System.Drawing.Size(478, 444);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAbrir);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmControles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Inicio";
             this.Load += new System.EventHandler(this.frmControles_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.Label label1;
     }
 }
