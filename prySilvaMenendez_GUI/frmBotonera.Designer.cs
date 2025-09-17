@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBotonera));
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -136,6 +137,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBotonera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles de Interfaz Grafica";
