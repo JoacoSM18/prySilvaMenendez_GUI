@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBotonera));
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lstNombres = new System.Windows.Forms.ComboBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
@@ -61,19 +61,19 @@
             this.lblDatos.Text = "Nombres:";
             this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // lstNombres
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.lstNombres.FormattingEnabled = true;
+            this.lstNombres.Items.AddRange(new object[] {
             "Luca",
             "Josefina",
             "Pablo"});
-            this.comboBox1.Location = new System.Drawing.Point(185, 233);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "Seleccione Un Nombre";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.lstNombres.Location = new System.Drawing.Point(185, 233);
+            this.lstNombres.Name = "lstNombres";
+            this.lstNombres.Size = new System.Drawing.Size(135, 21);
+            this.lstNombres.TabIndex = 3;
+            this.lstNombres.Text = "Seleccione Un Nombre";
+            this.lstNombres.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnAtras
             // 
@@ -134,7 +134,7 @@
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lstNombres);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -150,7 +150,7 @@
 
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Label lblDatos;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox lstNombres;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnUltimo;
         private System.Windows.Forms.Button btnPrimero;

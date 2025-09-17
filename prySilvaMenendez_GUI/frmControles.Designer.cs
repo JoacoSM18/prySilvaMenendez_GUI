@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControles));
             this.btnAbrir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lstNombresArray = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnAbrir
@@ -59,12 +60,21 @@
             this.label1.Text = "Bienvenido!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lstNombresArray
+            // 
+            this.lstNombresArray.FormattingEnabled = true;
+            this.lstNombresArray.Location = new System.Drawing.Point(111, 101);
+            this.lstNombresArray.Name = "lstNombresArray";
+            this.lstNombresArray.Size = new System.Drawing.Size(79, 43);
+            this.lstNombresArray.TabIndex = 2;
+            // 
             // frmControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(319, 289);
+            this.Controls.Add(this.lstNombresArray);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAbrir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -81,5 +91,6 @@
 
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox lstNombresArray;
     }
 }

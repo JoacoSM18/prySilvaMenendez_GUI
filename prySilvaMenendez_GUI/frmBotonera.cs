@@ -22,8 +22,9 @@ namespace prySilvaMenendez_GUI
             
         }
 
-        string[] vecNombres = new string[3];
-        int indice = -1; 
+        public string[] vecNombres = new string[3];
+        int indice = -1;
+        int indiceCombo = 0;
 
         private void frmBotonera_Load(object sender, EventArgs e)
         {
@@ -31,6 +32,11 @@ namespace prySilvaMenendez_GUI
             vecNombres[1] = "Josefina";
             vecNombres[2] = "Pablo";
             btnAtras.Enabled = false;
+            while (indiceCombo < vecNombres.Length)
+            {
+               lstNombres.Items.Add(vecNombres[indiceCombo++]);
+            }
+
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -83,6 +89,11 @@ namespace prySilvaMenendez_GUI
             indice = 2;
             btnAtras.Enabled = true;
             btnSiguiente.Enabled = false;
+
+            if (indice == vecNombres.Length - 1)
+            {
+                btnUltimo.Enabled = false;
+            }
         }
     }
 }
