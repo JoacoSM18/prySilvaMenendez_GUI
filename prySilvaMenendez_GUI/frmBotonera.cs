@@ -68,5 +68,21 @@ namespace prySilvaMenendez_GUI
                 btnAtras.Enabled = false;
             }
         }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            lblDatos.Text = vecNombres [0];
+            indice = 0;
+            btnSiguiente.Enabled = true;
+            btnAtras.Enabled = false;
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            lblDatos.Text = vecNombres[vecNombres.Length - 1];
+            indice = 2;
+            btnAtras.Enabled = true;
+            btnSiguiente.Enabled = false;
+        }
     }
 }
