@@ -39,7 +39,7 @@
             this.btnAbrir.BackColor = System.Drawing.Color.Sienna;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAbrir.Location = new System.Drawing.Point(74, 176);
+            this.btnAbrir.Location = new System.Drawing.Point(69, 205);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(183, 60);
             this.btnAbrir.TabIndex = 0;
@@ -62,10 +62,14 @@
             // 
             // lstNombresArray
             // 
+            this.lstNombresArray.BackColor = System.Drawing.Color.Sienna;
+            this.lstNombresArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstNombresArray.ForeColor = System.Drawing.SystemColors.Window;
             this.lstNombresArray.FormattingEnabled = true;
-            this.lstNombresArray.Location = new System.Drawing.Point(111, 101);
+            this.lstNombresArray.ItemHeight = 24;
+            this.lstNombresArray.Location = new System.Drawing.Point(100, 99);
             this.lstNombresArray.Name = "lstNombresArray";
-            this.lstNombresArray.Size = new System.Drawing.Size(79, 43);
+            this.lstNombresArray.Size = new System.Drawing.Size(122, 76);
             this.lstNombresArray.TabIndex = 2;
             // 
             // frmControles
