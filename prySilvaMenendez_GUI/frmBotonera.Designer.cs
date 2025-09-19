@@ -54,9 +54,9 @@
             // 
             this.lblDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDatos.Location = new System.Drawing.Point(185, 70);
+            this.lblDatos.Location = new System.Drawing.Point(133, 70);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(135, 33);
+            this.lblDatos.Size = new System.Drawing.Size(235, 33);
             this.lblDatos.TabIndex = 0;
             this.lblDatos.Text = "Nombres:";
             this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

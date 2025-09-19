@@ -32,6 +32,8 @@ namespace prySilvaMenendez_GUI
             vecNombres[1] = "Josefina";
             vecNombres[2] = "Pablo";
             btnAtras.Enabled = false;
+            lstNombres.Items.Clear();
+            indiceCombo = 0;
             while (indiceCombo < vecNombres.Length)
             {
                lstNombres.Items.Add(vecNombres[indiceCombo++]);
@@ -46,7 +48,8 @@ namespace prySilvaMenendez_GUI
             if (indice < vecNombres.Length) 
             {
                 lblDatos.Text = vecNombres[indice];
-                btnAtras.Enabled = true; 
+                btnAtras.Enabled = true;
+                btnUltimo.Enabled = true;
             }
 
             if (indice == vecNombres.Length - 1)
@@ -67,6 +70,7 @@ namespace prySilvaMenendez_GUI
             {
                 lblDatos.Text = vecNombres[indice];
                 btnSiguiente.Enabled = true;
+                btnUltimo.Enabled = true;
             }
             else
             {
@@ -89,11 +93,6 @@ namespace prySilvaMenendez_GUI
             indice = 2;
             btnAtras.Enabled = true;
             btnSiguiente.Enabled = false;
-
-            if (indice == vecNombres.Length - 1)
-            {
-                btnUltimo.Enabled = false;
-            }
         }
     }
 }

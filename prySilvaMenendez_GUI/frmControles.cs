@@ -28,7 +28,7 @@ namespace prySilvaMenendez_GUI
         {
             frmBotonera ventanaBotonera = new frmBotonera();
             ventanaBotonera.Show();
-            ventanaBotonera.vecNombres[0] = "Joaquin";
+            ventanaBotonera.vecNombres[0] = "Soy Hacker";
             ventanaBotonera.Show();
             int indiceVectorNombres = 0;
             while (indiceVectorNombres < ventanaBotonera.vecNombres.Length)
