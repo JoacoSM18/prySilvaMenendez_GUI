@@ -17,11 +17,6 @@ namespace prySilvaMenendez_GUI
             InitializeComponent();
         }
 
-        private void btnBotonera_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         public string[] vecNombres = new string[3];
         int indice = -1;
         int indiceCombo = 0;
@@ -38,34 +33,25 @@ namespace prySilvaMenendez_GUI
             {
                lstNombres.Items.Add(vecNombres[indiceCombo++]);
             }
-
         }
-
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             indice++; 
-
             if (indice < vecNombres.Length) 
             {
                 lblDatos.Text = vecNombres[indice];
                 btnAtras.Enabled = true;
                 btnUltimo.Enabled = true;
             }
-
             if (indice == vecNombres.Length - 1)
             {
                 btnSiguiente.Enabled = false;
+                btnUltimo.Enabled = false;
             }
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAtras_Click(object sender, EventArgs e)
         {
             indice--;
-
             if (indice >= 0)
             {
                 lblDatos.Text = vecNombres[indice];
@@ -78,7 +64,6 @@ namespace prySilvaMenendez_GUI
                 btnAtras.Enabled = false;
             }
         }
-
         private void btnPrimero_Click(object sender, EventArgs e)
         {
             lblDatos.Text = vecNombres [0];
@@ -86,7 +71,6 @@ namespace prySilvaMenendez_GUI
             btnSiguiente.Enabled = true;
             btnAtras.Enabled = false;
         }
-
         private void btnUltimo_Click(object sender, EventArgs e)
         {
             lblDatos.Text = vecNombres[vecNombres.Length - 1];

@@ -37,5 +37,10 @@ namespace prySilvaMenendez_GUI
                 indiceVectorNombres++;
             }
         }
+
+        private void lstNombresArray_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

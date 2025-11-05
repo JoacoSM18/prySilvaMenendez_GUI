@@ -42,9 +42,10 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.Linen;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(245, 142);
+            this.btnSiguiente.Location = new System.Drawing.Point(368, 218);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(107, 35);
+            this.btnSiguiente.Size = new System.Drawing.Size(160, 54);
             this.btnSiguiente.TabIndex = 1;
             this.btnSiguiente.Text = "Siguiente ->";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -54,34 +55,36 @@
             // 
             this.lblDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDatos.Location = new System.Drawing.Point(133, 70);
+            this.lblDatos.Location = new System.Drawing.Point(200, 108);
+            this.lblDatos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(235, 33);
+            this.lblDatos.Size = new System.Drawing.Size(352, 51);
             this.lblDatos.TabIndex = 0;
             this.lblDatos.Text = "Nombres:";
             this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lstNombres
             // 
+            this.lstNombres.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstNombres.FormattingEnabled = true;
             this.lstNombres.Items.AddRange(new object[] {
             "Luca",
             "Josefina",
             "Pablo"});
-            this.lstNombres.Location = new System.Drawing.Point(185, 233);
+            this.lstNombres.Location = new System.Drawing.Point(278, 358);
+            this.lstNombres.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstNombres.Name = "lstNombres";
-            this.lstNombres.Size = new System.Drawing.Size(135, 21);
+            this.lstNombres.Size = new System.Drawing.Size(200, 28);
             this.lstNombres.TabIndex = 3;
-            this.lstNombres.Text = "Seleccione Un Nombre";
-            this.lstNombres.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.Linen;
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(143, 142);
+            this.btnAtras.Location = new System.Drawing.Point(214, 218);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(96, 35);
+            this.btnAtras.Size = new System.Drawing.Size(144, 54);
             this.btnAtras.TabIndex = 2;
             this.btnAtras.Text = "<- Anterior";
             this.btnAtras.UseVisualStyleBackColor = false;
@@ -91,9 +94,10 @@
             // 
             this.btnUltimo.BackColor = System.Drawing.Color.Linen;
             this.btnUltimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUltimo.Location = new System.Drawing.Point(396, 142);
+            this.btnUltimo.Location = new System.Drawing.Point(594, 218);
+            this.btnUltimo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUltimo.Name = "btnUltimo";
-            this.btnUltimo.Size = new System.Drawing.Size(91, 35);
+            this.btnUltimo.Size = new System.Drawing.Size(136, 54);
             this.btnUltimo.TabIndex = 4;
             this.btnUltimo.Text = "Último -->";
             this.btnUltimo.UseVisualStyleBackColor = false;
@@ -103,9 +107,10 @@
             // 
             this.btnPrimero.BackColor = System.Drawing.Color.Linen;
             this.btnPrimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrimero.Location = new System.Drawing.Point(3, 142);
+            this.btnPrimero.Location = new System.Drawing.Point(4, 218);
+            this.btnPrimero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPrimero.Name = "btnPrimero";
-            this.btnPrimero.Size = new System.Drawing.Size(100, 38);
+            this.btnPrimero.Size = new System.Drawing.Size(150, 58);
             this.btnPrimero.TabIndex = 5;
             this.btnPrimero.Text = "<-- Primero";
             this.btnPrimero.UseVisualStyleBackColor = false;
@@ -117,19 +122,20 @@
             this.lblTuBotonera.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTuBotonera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTuBotonera.Location = new System.Drawing.Point(158, 9);
+            this.lblTuBotonera.Location = new System.Drawing.Point(237, 14);
+            this.lblTuBotonera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTuBotonera.Name = "lblTuBotonera";
-            this.lblTuBotonera.Size = new System.Drawing.Size(179, 33);
+            this.lblTuBotonera.Size = new System.Drawing.Size(268, 51);
             this.lblTuBotonera.TabIndex = 6;
             this.lblTuBotonera.Text = "Tu Botonera";
             this.lblTuBotonera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmBotonera
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(490, 307);
+            this.ClientSize = new System.Drawing.Size(735, 472);
             this.Controls.Add(this.lblTuBotonera);
             this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.btnUltimo);
@@ -137,7 +143,9 @@
             this.Controls.Add(this.lstNombres);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblDatos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmBotonera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controles de Interfaz Grafica";
